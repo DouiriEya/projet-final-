@@ -1,0 +1,126 @@
+.post-notification-wrapper {
+    position: fixed;
+    top: 0px; /* Adjust based on your design */
+    right: 200px; /* Adjust based on your design */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.notification-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between the icon and any other elements */
+    position: relative;
+}
+
+.lottie-icon-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.lottie-icon {
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.lottie-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.notification-counter {
+    position: absolute;
+    top: 20px; /* Adjust based on your design */
+    right: 5px; /* Adjust based on your design */
+    background: #f44336; /* Red color for counter */
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px; /* Adjust based on your design */
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for counter */
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust based on your design */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px; /* Slightly larger text */
+    white-space: nowrap;
+    z-index: 2000;
+}
+
+.lottie-icon-container:hover .tooltip {
+    display: block;
+}
+
+.notifications {
+    position: absolute;
+    top: 110%; /* Positioned below the notification icon */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    width: 320px; /* Slightly wider for better visibility */
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for the dropdown */
+    animation: slideIn 0.3s ease-out; /* Smooth slide-in effect */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.notification-item {
+    background: #f9f9f9; /* Light background for items */
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+    transition: background 0.3s ease; /* Smooth background change on hover */
+}
+
+.notification-item:hover {
+    background: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.notification-item:last-child {
+    margin-bottom: 0;
+}
+
+.notification-item button {
+    background: #4CAF50; /* Green background for button */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease; /* Smooth background change on hover */
+}
+
+.notification-item button:hover {
+    background: #45a049; /* Slightly darker green on hover */
+}
+
+.notification-item button:active {
+    background: #388e3c; /* Even darker green on click */
+}

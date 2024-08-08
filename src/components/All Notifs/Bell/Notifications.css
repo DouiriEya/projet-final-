@@ -1,0 +1,132 @@
+.notification-wrapper {
+  position: fixed;
+  top: 20px; /* Adjust based on your design */
+  right:140px; /* Adjust based on your design */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.notification-bell {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.notification-icon {
+  font-size: 30px;
+  width: 25px;
+  height: 40px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+.notification-icon:hover {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.notification-counter {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #f44336; /* Red color for counter */
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for counter */
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 50px; /* Adjust based on your design */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px; /* Slightly larger text */
+  white-space: nowrap;
+  z-index: 2000;
+}
+
+.notification-bell:hover .tooltip {
+  display: block;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 60px; /* Positioned below the notification icon */
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  width: 320px; /* Slightly wider for better visibility */
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for dropdown */
+  animation: fadeIn 0.3s ease-out; /* Smooth fade-in effect */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notification-item {
+  background: #f9f9f9; /* Light background for items */
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  transition: background 0.3s ease; /* Smooth background change on hover */
+}
+
+.notification-item:hover {
+  background: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.notification-item:last-child {
+  margin-bottom: 0;
+}
+
+.friend-request-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.friend-request-actions button {
+  background: #007bff; /* Blue background for buttons */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease; /* Smooth background change on hover */
+}
+
+.friend-request-actions button:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+.friend-request-actions button:disabled {
+  background: #ccc; /* Gray background for disabled state */
+  cursor: not-allowed;
+}

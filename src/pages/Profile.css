@@ -1,0 +1,236 @@
+/* General Styling */
+body {
+  background-color: #e0f2f1;
+   
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Profile Container */
+.profile-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Profile Header */
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-header h2 {
+  color: #004d40; /* Dark green for headers */
+  font-size: 2.2em; /* Slightly larger font size */
+  font-weight: bold;
+  border-bottom: 2px solid #00796b; /* Underline with a vibrant color */
+  padding-bottom: 10px;
+}
+
+/* Profile Info Section */
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 2px solid #00796b; /* Stylish left border */
+  padding-left: 20px; /* Add padding to separate from border */
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
+  border: 5px solid #004d40; /* Vibrant border color */
+}
+
+/* Profile Details */
+.profile-details {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.profile-details p {
+  font-size: 1.1em; /* Adjusted for readability */
+  color: #333;
+  margin: 10px 0;
+  line-height: 1.5; /* Increased line-height for better readability */
+}
+
+.profile-details strong {
+  color: #00796b; /* Vibrant green for labels */
+  font-weight: bold; /* Ensure labels are bold */
+}
+
+/* Star Ratings */
+.star-rating {
+  color: #fdd835;
+  font-size: 1.8em; /* Slightly larger stars */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown-options.open {
+  display: block;
+}
+
+.dropdown-button {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  width: 100%;
+  font-size: 1em;
+}
+
+.dropdown-button:hover {
+  background-color: #004d40;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Gear Icon */
+.gear-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.gear-icon .icon {
+  font-size: 2.5em;
+  color: #00796b;
+}
+
+/* Friends Icon */
+.friends-icon {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.8em;
+  color: #00796b;
+}
+
+.friends-icon:hover {
+  color: #004d40;
+}
+
+/* Friends List */
+.friends-list {
+  width: 100%;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.friends-list h3 {
+  color: #004d40;
+  margin-bottom: 10px;
+  font-size: 1.5em; /* Larger font size for headings */
+  font-weight: bold; /* Make headings bold */
+}
+
+.friends-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friends-list ul li {
+  padding: 12px;
+  margin: 5px 0;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.friends-list ul li:hover {
+  background: #b2dfdb; /* Light green background on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 1.1em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Vibrant Button Style */
+button {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #004d40;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Profile.css */
+
+.modal {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  top: 20%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  margin-left: 10px;
+}

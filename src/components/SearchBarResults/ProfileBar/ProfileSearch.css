@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+  background-color: #e0f2f1;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Profile Container */
+.profile-search-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/* Profile Info Section */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-right: 2px solid #00796b;
+  padding-right: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border: 5px solid #004d40;
+}
+
+/* Profile Details */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-details h2 {
+  color: #004d40;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.profile-details p {
+  font-size: 1.1em;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.profile-details strong {
+  color: #00796b;
+  font-weight: bold;
+}
+
+/* Rating Section */
+.rating-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Friends Icon */
+.friends-icon {
+  cursor: pointer;
+  font-size: 1.8em;
+  color: #00796b;
+  margin-top: 20px;
+}
+
+.friends-icon:hover {
+  color: #004d40;
+}
+
+/* Friends List */
+.friends-list {
+  width: 100%;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.friends-list h3 {
+  color: #004d40;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.friends-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friends-list ul li {
+  padding: 12px;
+  margin: 5px 0;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.friends-list ul li:hover {
+  background: #b2dfdb;
+  transform: translateY(-2px);
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 1.1em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Button Styling */
+button, .send-friend-request-button {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s, transform 0.2s;
+  margin: 5px 0;
+}
+
+button:hover, .send-friend-request-button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+button:disabled, .send-friend-request-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.friends-status-icon {
+  font-size: 1.8em;
+  color: green;
+  margin-left: 10px;
+}
+
+/* User Posts Section */
+.user-posts-section {
+  grid-column: 2 / 3;
+}

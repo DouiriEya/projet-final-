@@ -1,0 +1,102 @@
+/* Main container styling */
+.post-form {
+  width: 100%;
+  max-width: 600px; /* Reduced width for better fit */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Reduced padding */
+  border-radius: 10px; /* Slightly smaller border-radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+  background: linear-gradient(135deg, #e0f7fa, #b2dfdb);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header styling */
+.post-form h2 {
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin */
+  font-size: 1.8rem; /* Slightly smaller font size */
+  color: #004d40;
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Reduced margin */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px; /* Slightly smaller border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  position: relative;
+}
+
+/* Icon styling */
+.form-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00796b;
+  font-size: 1.4rem; /* Slightly smaller icon size */
+}
+
+/* Input field styling */
+input, select {
+  width: calc(100% - 40px);
+  padding: 10px; /* Reduced padding */
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  font-size: 15px; /* Slightly smaller font size */
+  outline: none;
+  padding-left: 40px;
+}
+
+/* Payment method specific styling */
+input.rib {
+  padding-left: 45px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px; /* Reduced padding */
+  border: none;
+  border-radius: 8px; /* Slightly smaller border-radius */
+  background-color: #00796b;
+  color: white;
+  font-size: 16px; /* Slightly smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin */
+  font-size: 1.1rem; /* Slightly smaller font size */
+}
+
+/* Background image of destinations linked */
+.post-form::before {
+  content: none; /* Removed background image */
+}
+
+/* Additional visual enhancements */
+input:focus, select:focus {
+  border-color: #004d40;
+  box-shadow: 0 0 5px rgba(0, 77, 64, 0.5);
+}
+
+.select-icon {
+  background: none; /* Removed icon background */
+}

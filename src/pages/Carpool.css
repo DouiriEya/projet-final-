@@ -1,0 +1,31 @@
+/* Carpool.css */
+.all {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('C:\Users\eyaen\Desktop\safe copy project\tariki\src\components\assets\marker.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow issues */
+  }
+  
+  .post-container {
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Max width for large screens */
+    height: 80vh; /* Adjust the height to fit your design */
+    overflow-y: auto; /* Allows vertical scrolling */
+    background-color:none; /* Background color with slight transparency */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 20px; /* Space inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+  }
+  
+  /* Optional styling for PostSearchBar if needed */
+  .post-search-bar-container {
+    margin-bottom: 20px; /* Space between the search bar and posts */
+  }
+  
